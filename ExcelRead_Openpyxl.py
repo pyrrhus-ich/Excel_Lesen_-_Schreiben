@@ -10,16 +10,19 @@ def iter_rows(ws):
     for row in ws.iter_rows():
         yield [cell.value for cell in row]
 print(list(iter_rows(ws)))
-
+# Mit Hilfe des Iterators alle Spalten des Excel Files in einer
+# Liste von Listen speichern
 val = []
 for el in iter_rows(ws):
     val.append(el)
 print(val)
+# Mit Hilfe des Iterators die Werte einer Spalte in einer 
+# Liste speichern
 val0=[]
 for el in iter_rows(ws):
     val0.append(el[0])
 print(val0)
-
+print(val0[0])
 
 
 
