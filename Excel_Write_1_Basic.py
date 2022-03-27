@@ -1,4 +1,4 @@
-from openpyxl import Workbook, workbook as wb
+from openpyxl import Workbook
 
     # zuerst wird eine workbook Instanz erstellt
 wb=Workbook()
